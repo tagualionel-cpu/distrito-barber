@@ -28,3 +28,20 @@ navMenu.querySelectorAll("a").forEach((link) => {
 // Actualizar el año automáticamente
 document.querySelector("#year").textContent =
   new Date().getFullYear();
+
+function reservarTurno() {
+  const fecha = document.getElementById("fecha").value;
+  const hora = document.getElementById("hora").value;
+
+  if (!fecha || !hora) {
+    alert("Elegí una fecha y un horario para continuar.");
+    return;
+  }
+
+  const numero = "549263422441"; // Reemplazá por el mismo número de tu botón
+  const mensaje = `Hola, quiero solicitar un turno en Distrito Barber para el día ${fecha} a las ${hora}. ¿Está disponible?`;
+
+  const enlace = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+
+  window.open(enlace, "_blank");
+}
