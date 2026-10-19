@@ -38,7 +38,7 @@ function reservarTurno() {
     return;
   }
 
-  const numero = "549263422441"; // Reemplazá por el mismo número de tu botón
+  const numero = "5492634224414"; // Reemplazá por el mismo número de tu botón
   const mensaje = `Hola, quiero solicitar un turno en Distrito Barber para el día ${fecha} a las ${hora}. ¿Está disponible?`;
 
   const enlace = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
