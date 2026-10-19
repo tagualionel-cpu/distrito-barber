@@ -144,7 +144,31 @@
       >
         <span>◉</span> Reservar por WhatsApp
       </a>
+<div class="turnos">
+  <h3>Reservá tu turno</h3>
+  <label for="fecha">Elegí el día</label>
+  <input type="date" id="fecha" required>
 
+  <label for="hora">Elegí el horario</label>
+  <select id="hora" required>
+    <option value="">Seleccionar horario</option>
+    <option>10:00</option>
+    <option>11:00</option>
+    <option>12:00</option>
+    <option>15:00</option>
+    <option>16:00</option>
+    <option>17:00</option>
+    <option>18:00</option>
+    <option>19:00</option>
+  </select>
+
+  <button type="button" onclick="reservarTurno()">
+    Solicitar turno por WhatsApp
+  </button>
+</div>
+
+
+      
       <p class="demo-note">
         Reemplazá el número de ejemplo por el número autorizado
         del negocio antes de publicar la web.
